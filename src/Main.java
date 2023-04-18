@@ -26,7 +26,7 @@ public class Main {
         for (int i = 0; i < n; i++) {
             candidates[i] = i;
         }
-        Arrays.sort(candidates, (a, b) -> -Integer.compare(countOnes(adjacencyMatrix[a]), countOnes(adjacencyMatrix[b])));
+        // Arrays.sort(candidates, (a, b) -> -Integer.compare(countOnes(adjacencyMatrix[a]), countOnes(adjacencyMatrix[b])));
         int maxCliqueSize = 1;
         List<Integer> currentClique = new ArrayList<>();
         List<Integer> remaining = new ArrayList<>();
