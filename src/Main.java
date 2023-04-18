@@ -6,10 +6,10 @@ import java.util.List;
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
+        int[][] adjMat = {{1,2,3},{4,5,6},{7,8,9}};
         int cliqueNumber = cliqueNumberBB(adjMat);
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+
+        System.out.printf(String.valueOf(cliqueNumber));
 
         // Press Shift+F10 or click the green arrow button in the gutter to run the code.
         for (int i = 1; i <= 5; i++) {
