@@ -4,6 +4,7 @@ import java.io.File;
 import java.util.Scanner;
 
 public class MatrixInput {
+    public int[] degree;
     public int[][] include(){
         try {
             Scanner input = new Scanner(new File("src/mat01.txt"));
@@ -11,8 +12,12 @@ public class MatrixInput {
             int[][] a = new int[n][n];
             while (input.hasNextInt()) {
                 for (int i = 0; i < n; i++) {
-                    for (int j = 0; j < n; j++)
+                    for (int j = 0; j < n; j++) {
                         a[i][j] = input.nextInt();
+                        if(i > j) {
+                            this.degree[i]++;
+                        }
+                    }
                 }
 
             }
@@ -29,7 +34,7 @@ public class MatrixInput {
 
             return a;
         } catch (Exception e){
-            e.getMessage();
+            System.out.println(e.getMessage());
             return null;
         }
     }
