@@ -1,8 +1,11 @@
 import src.cliquenumber.CliqueNumber;
+import src.matrixinput.MatrixInput;
 
 public class Main {
     public static void main(String[] args) {
-        int[][] adjMat = {{0,1,1,1},{1,0,1,1},{1,1,0,1},{1,1,1,0}};
+        MatrixInput mi = new MatrixInput();
+        int[][] adjMat = mi.include();
+
         CliqueNumber CN = new CliqueNumber();
         int cliqueNumber = CN.cliqueNumber(adjMat);
 
