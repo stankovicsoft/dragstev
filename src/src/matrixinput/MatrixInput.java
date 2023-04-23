@@ -9,6 +9,12 @@ public class MatrixInput {
         try {
             Scanner input = new Scanner(new File("src/mat01.txt"));
             int n = input.nextInt();
+
+            degree = new int[n];
+            for(int i = 0; i < n; i++){
+                degree[i] = 0;
+            }
+
             int[][] a = new int[n][n];
             while (input.hasNextInt()) {
                 for (int i = 0; i < n; i++) {

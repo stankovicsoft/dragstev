@@ -12,7 +12,6 @@ public class Main {
         System.out.println(String.valueOf(cliqueNumber));
 
 
-
         CliqueNumber2 CN2 = new CliqueNumber2(adjMat, mi.degree, 1);
         int[] sol = CN2.giveResult();
         System.out.printf(String.valueOf(sol.length));
